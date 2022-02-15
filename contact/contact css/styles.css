@@ -134,7 +134,8 @@
     max-width: 35rem;
     width: 100%;
   }
-  .form input {
+  .form input,
+  .form textarea {
     width: 35rem;
   }
   .contact-bg {

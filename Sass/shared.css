@@ -304,4 +304,28 @@ body {
     margin-left: 0;
   }
 }
+
+.mobile-nav {
+  height: 100vh;
+  width: 45%;
+  background-color: #FFFFFF;
+  padding: 0;
+  margin: 0;
+  position: fixed;
+  z-index: 5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.mobile {
+  color: #F67E7E;
+}
 /*# sourceMappingURL=shared.css.map */

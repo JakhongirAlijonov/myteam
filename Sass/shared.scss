@@ -250,3 +250,22 @@ $regular-weight:600;
         margin-left: 0;
     }
 }
+
+.mobile-nav {
+    height: 100vh;
+    width: 45%;
+    background-color: $primary-text-color;
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.mobile {
+    color: $contact-bg-secondary-text;
+}
+
+.contact {}
