@@ -1,0 +1,128 @@
+$primary-bg-color-1: #014E56;
+$primary-bg-color-2: #012F34;
+$primary-bg-color-3: #002529;
+$contact-bg-secondary-text: #F67E7E;
+$primary-text-color: #FFFFFF;
+$bold-weight: 700;
+$regular-weight:600;
+.contact-form {
+    padding-top: 11rem;
+    background-color: $primary-bg-color-1;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.ask-title {
+    color: $primary-text-color;
+    font-size: 6.4rem;
+    font-weight: $bold-weight;
+    line-height: 10rem;
+}
+
+.ask-about {
+    color: $contact-bg-secondary-text;
+    font-size: 3.2rem;
+    font-weight: $bold-weight;
+    line-height: 4.8rem;
+}
+
+.ask-list {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 12rem;
+}
+
+.ask-item {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.item-text {
+    margin-left: 2.3rem;
+    color: $primary-text-color;
+    font-size: 1.8rem;
+    font-weight: $bold-weight;
+    line-height: 2.8rem;
+}
+
+.contact-bg {
+    position: absolute;
+    width: 20rem;
+    height: 20rem;
+    background: url('../../images/directors-circle.svg');
+    background-position: -100px 0;
+    background-repeat: no-repeat;
+    top: 12.5rem;
+    left: 0;
+}
+
+.contact-bg-red {
+    position: absolute;
+    width: 20rem;
+    height: 20rem;
+    background: url('../../images/Group\ 4.svg');
+    background-position: 100px 0;
+    background-repeat: no-repeat;
+    bottom: 0;
+    right: 0;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    input,
+    textarea {
+        padding: 1.6rem;
+        color: $primary-text-color;
+        font-size: 1.5rem;
+        font-weight: $regular-weight;
+        line-height: 2.5rem;
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid $primary-text-color;
+        width: 54rem;
+        outline: none;
+    }
+    button {
+        margin-top: 2.4rem;
+        width: 12.3rem;
+        background-color: $primary-text-color;
+        outline: none;
+        font-size: 1.8rem;
+        cursor: pointer;
+        font-weight: $primary-text-color;
+        line-height: 2.8rem;
+        border-radius: 24px;
+        border: 2px solid #FFFFFF;
+        padding: 10px 32px;
+        color: #004047;
+        transition: .3s ease;
+        &:hover {
+            color: $primary-text-color;
+            background-color: transparent;
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .contact-form {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .form {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 11.2rem;
+    }
+}
+
+@media (max-width:400px) {
+    input {
+        max-width: 35rem;
+    }
+    .contact-bg {
+        display: none;
+    }
+}
