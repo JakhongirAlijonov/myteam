@@ -130,8 +130,12 @@
 }
 
 @media (max-width: 400px) {
-  input {
+  .form {
     max-width: 35rem;
+    width: 100%;
+  }
+  .form input {
+    width: 35rem;
   }
   .contact-bg {
     display: none;
